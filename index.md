@@ -2,10 +2,9 @@
 
 ---
 
-### Category Name 1 
+### About me 
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+Hi there! I am an aspiring Software Engineer with experience and interest in Full Stack, Machine Learning, Data Science and Cloud Computing. I have a master's degree in Computer Science from New York University and a B.Tech in Computer Science from Rajasthan Technical University, India. I have worked on different languages and frameworks like C++, Python, Ruby and Django but my recent love is for JavaScript, Node, React, Angular, Java and Spring. I am looking for new opportunities in Software Engineering or Full Stack Engineer.
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
