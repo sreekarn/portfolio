@@ -7,7 +7,11 @@
 Hi there! I am an aspiring Software Engineer with interest in Machine Learning, Data Science and Cloud Computing. I'm currently pursuing my master's degree in Computer Science at UNC Charlotte. I have worked for 3 and half years at TATA Consultancy Services as Data Engineer at Hyderabad, India. I'm actively looking for internship opportunities for Summer 2021.
 
 ### Experience
-<hr>
+Systems Engineer
+
+<i style='font-size:24px' class='far'>&#xf073;</i>
+
+• Worked as Ab Initio Developer. Helped in migrating high rooted applications with complex business logics, which require many edge cases to be covered, and involves deeper understanding of both SAS and Ab Initio. Extensively used ETL methodologies for supporting data extraction, transformations and loading processing, in a corporate-wide-ETL Solution using Ab Initio.
 
 ### Projects and Publications
 <hr>
