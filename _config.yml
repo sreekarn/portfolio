@@ -1,13 +1,11 @@
 title: Sreekar Nedunuri # your name (or website title) here
 logo: "/images/DP.jpg" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-   Aspiring Software Engineer 
+  Aspiring Software Engineer 
   <br><br>
-  <a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a>
+  <a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a> 
   <br><br>
   <a href="www.gmail.com">My Email: sreekarnedunuri@gmail.com</a>
-  <b>Reach me at: +1(980)-322-7651</b>
-  <br><br>
    
   
 theme: jekyll-theme-minimal
