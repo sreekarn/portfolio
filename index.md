@@ -1,7 +1,3 @@
-## Portfolio
-
----
-
 ### About me 
 <hr>
 Hi there! I am an aspiring Software Engineer with interest in Machine Learning, Data Science and Cloud Computing. I'm currently pursuing my master's degree in Computer Science at UNC Charlotte. I have worked for 3 and half years at TATA Consultancy Services as Data Engineer at Hyderabad, India. I'm actively looking for internship opportunities for Summer 2021.
@@ -46,11 +42,16 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Reporting Tools:</b> Tableau, SAP Business Objects
 
 ### Education
+<b>Master of Science : UNC Charlotte</b><br>Computer Science<br>Jan 2020-Dec 2021<br>
+<b>Bachelor of Technology : CVR College of Engineering</b><br>Electronics and Communication Engineering<br>Jun 2012-May 2016
 
-
-
-
-
+### Awards and Recognition
+• Received Service and commitment award from TCS.<br>
+• Secured first prize in technical paper presentation on the topic “NFC” in state level technical symposium Srujana 2K15 held at
+  JNT University, Hyderabad.<br>
+• Secured second prize in seminar on the topic “good governance” an event conducted on the occasion of Atal Bihari Vajpayee
+  birthday by government of India.
+• Secured several sports awards for cricket, football and basketball during school level.
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
