@@ -16,14 +16,17 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
    <br>
    • Worked on three projects during my tenure out of which two as a team member and one as lead of a project.
    <br>
-   • Automated workflow using Shell scripting programming language.
+   • Automated workflow using shell scripting programming language.
    
 
 ### Projects and Publications
 <hr>
 <b>Publication</b>
 Published a research paper titled “<a href="http://www.ijirset.com/upload/2015/september/55_ASIC.pdf">ASIC Implementation of Three Stage Data Path Logic Structure</a> ” in International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET) with an impact factor of 5.442.
-
+<br>
+<b>Projects</b>
+<p>AWS DeepRacer</p>
+Working on “AWS DeepRacer" project currently under Professor “<a href="https://sites.google.com/a/uncc.edu/mcshin/">Min Shin</a>” where our objective is to train the model of a self-driving car in the AWS 3D simulator, Experiment with multiple sensor inputs, the latest reinforcement learning algorithms, neural network configurations and simulate them to real domain transfer methods.
 
 
 ### Skill Set
