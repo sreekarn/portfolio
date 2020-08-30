@@ -55,6 +55,8 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
    birthday by government of India.<br>
 • Secured several sports awards for cricket, football and basketball during school level.</p>
 
----
+<hr>
+<p>My motto:<i> “Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.”</i></p>
+<p style="font-size:11px">Portfolio inspired from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
 
 <!-- Remove above link if you don't want to attibute -->
