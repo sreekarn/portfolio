@@ -4,27 +4,19 @@
 
 ### About me 
 
-Hi there! I am an aspiring Software Engineer with experience and interest in Full Stack, Machine Learning, Data Science and Cloud Computing. I have a master's degree in Computer Science from New York University and a B.Tech in Computer Science from Rajasthan Technical University, India. I have worked on different languages and frameworks like C++, Python, Ruby and Django but my recent love is for JavaScript, Node, React, Angular, Java and Spring. I am looking for new opportunities in Software Engineering or Full Stack Engineer.
+Hi there! I am an aspiring Software Engineer with interest in Machine Learning, Data Science and Cloud Computing. I'm currently pursuing my master's degree in Computer Science at UNC Charlotte. I have worked for 3 and half years at TATA Consultancy Services as Data Engineer at Hyderabad, India. I'm actively looking for internship opportunities for Summer 2021.
 
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+### Skill Set
 
----
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<b>Programming Languages: Java, Python(familiar)</b>
+Frameworks: SpringBoot
+Cloud Environment: AWS
+RDBMS Languages: SQL, PLSQL
+Databases: MySQL, Teradata, Oracle10g
+ETL Tools: AbInitio, Informatica
+Reporting Tools: Tableau, SAP Business Objects
 
----
 
-### Category Name 2
-
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
-
----
 
 
 
