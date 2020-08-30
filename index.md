@@ -21,6 +21,10 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
 
 ### Projects and Publications
 <hr>
+<b>Publication</b>
+Published a research paper titled “<a href="http://www.ijirset.com/upload/2015/september/55_ASIC.pdf">ASIC Implementation of Three Stage Data Path Logic Structure</a> ” in International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET) with an impact factor of 5.442.
+
+
 
 ### Skill Set
 <hr>
