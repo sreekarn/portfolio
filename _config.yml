@@ -4,8 +4,8 @@ description: > # your text below (remove <br> elements if you don't need line br
   <b>Aspiring Software Engineer</b><br>
   <i class="fa fa-home"></i>Charlotte, NC.
   <br><br>
-  <p><a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a> </br>
-  Email: sreekarnedunuri@gmail.com<br></p>
+  <p><a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a><br>
+  Email: sreekarnedunuri@gmail.com</p>
   Reach me at: +1(980)-322-7651</p>
   
 theme: jekyll-theme-minimal
