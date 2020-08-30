@@ -7,5 +7,9 @@ description: > # your text below (remove <br> elements if you don't need line br
   <p><a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a><br>
   Email: sreekarnedunuri@gmail.com</p>
   Reach me at: +1(980)-322-7651</p>
+  <span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+ </span>
   
 theme: jekyll-theme-minimal
