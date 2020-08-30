@@ -8,11 +8,14 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
 
 ### Experience
 <hr>
-<b>Systems Engineer</b> Jun 2016 - Oct 2019
+<b>Systems Engineer</b>Jun 2016 - Oct 2019
 
-   • Worked as Data Engineer for client CitiGroup. 
+   • Worked as Data Engineer for client CitiGroup.
+   <br><br>
    • Helped develop ETL graphs in AbInitio which would automate the process of extracting data from database, cleanse it, apply necessary logics on data and load it back              into the database.
+   <br><br>
    • Worked on three projects during my tenure out of which two as a team member and one as lead of a project.
+   <br><br>
    • Automated workflow using Shell scripting programming language.
    
 
