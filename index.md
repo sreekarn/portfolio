@@ -6,6 +6,12 @@
 <hr>
 Hi there! I am an aspiring Software Engineer with interest in Machine Learning, Data Science and Cloud Computing. I'm currently pursuing my master's degree in Computer Science at UNC Charlotte. I have worked for 3 and half years at TATA Consultancy Services as Data Engineer at Hyderabad, India. I'm actively looking for internship opportunities for Summer 2021.
 
+### Experience
+<hr>
+
+### Projects and Publications
+<hr>
+
 ### Skill Set
 <hr>
 <b>Programming Languages:</b> Java, Python(familiar)
@@ -21,6 +27,8 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
 <b>ETL Tools:</b> AbInitio, Informatica
 <br><br>
 <b>Reporting Tools:</b> Tableau, SAP Business Objects
+
+### Education
 
 
 
