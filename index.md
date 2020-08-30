@@ -42,10 +42,12 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Reporting Tools:</b> Tableau, SAP Business Objects
 
 ### Education
+<hr>
 <b>Master of Science : UNC Charlotte</b><br>Computer Science<br>Jan 2020-Dec 2021<br>
 <b>Bachelor of Technology : CVR College of Engineering</b><br>Electronics and Communication Engineering<br>Jun 2012-May 2016
 
 ### Awards and Recognition
+<hr>
 • Received Service and commitment award from TCS.<br>
 • Secured first prize in technical paper presentation on the topic “NFC” in state level technical symposium Srujana 2K15 held at
   JNT University, Hyderabad.<br>
@@ -54,5 +56,5 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 • Secured several sports awards for cricket, football and basketball during school level.
 
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
+
 <!-- Remove above link if you don't want to attibute -->
