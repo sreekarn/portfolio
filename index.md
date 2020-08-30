@@ -50,9 +50,9 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <hr>
 • Received Service and commitment award from TCS.<br>
 • Secured first prize in technical paper presentation on the topic “NFC” in state level technical symposium Srujana 2K15 held at
-  JNT University, Hyderabad.<br>
+   JNT University, Hyderabad.<br>
 • Secured second prize in seminar on the topic “good governance” an event conducted on the occasion of Atal Bihari Vajpayee
-  birthday by government of India.
+   birthday by government of India.
 • Secured several sports awards for cricket, football and basketball during school level.
 
 ---
