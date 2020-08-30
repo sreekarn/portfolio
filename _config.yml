@@ -5,8 +5,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   <a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a> 
   <br>
-  <p>Email: sreekarnedunuri@gmail.com</p>
-  <br>
-  <b>Reach me at: +1(980)-322-7651</b>   
+  <p>Email: sreekarnedunuri@gmail.com<br>
+  Reach me at: +1(980)-322-7651</p>
   
 theme: jekyll-theme-minimal
