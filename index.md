@@ -9,17 +9,17 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
 ### Skill Set
 <hr>
 <b>Programming Languages:</b> Java, Python(familiar)
-<br></br>
+<br><br>
 <b>Frameworks:</b> SpringBoot
-<br></br>
+<br><br>
 <b>Cloud Environment:</b> AWS
-<br></br>
+<br><br>
 <b>RDBMS Languages:</b> SQL, PLSQL
-<br></br>
+<br><br>
 <b>Databases:</b> MySQL, Teradata, Oracle10g
-<br></br>
+<br><br>
 <b>ETL Tools:</b> AbInitio, Informatica
-<br></br>
+<br><br>
 <b>Reporting Tools:</b> Tableau, SAP Business Objects
 
 
