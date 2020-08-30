@@ -8,9 +8,7 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
 
 ### Experience
 <hr>
-<b>Systems Engineer</b>
-TATA Consultancy Services
-Jun 2016 - Oct 2019
+<p><b>Systems Engineer</b><br>TATA Consultancy Services<br>Jun 2016 - Oct 2019</p>
 
    • Worked as Data Engineer for banking client CitiGroup.
    <br><br>
