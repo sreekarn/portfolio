@@ -5,7 +5,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   Charlotte, NC
   <br><br>
   <p><a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a><br>
-  Email: sreekarnedunuri@gmail.com<br>
-  Reach me at: +1(980)-322-7651</p>
+  <b>Email:</b> sreekarnedunuri@gmail.com<br>
+  <b>Reach me at:</b> +1(980)-322-7651</p>
   
 theme: jekyll-theme-minimal
