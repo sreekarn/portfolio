@@ -12,7 +12,7 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
 TATA Consultancy Services
 Jun 2016 - Oct 2019
 
-   • Worked as Data Engineer for client CitiGroup.
+   • Worked as Data Engineer for banking client CitiGroup.
    <br><br>
    • Helped develop ETL graphs in AbInitio which would automate the process of extracting data from database, cleanse it, apply necessary logics on data and load it back              into the database.
    <br><br>
