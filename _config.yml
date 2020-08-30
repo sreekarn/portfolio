@@ -3,9 +3,8 @@ logo: "/images/DP.jpg" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <b>Aspiring Software Engineer</b><br>
   Charlotte, NC
-  <br><br>
+  <br>
   <p><a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a><br>
   <b>Email:</b> sreekarnedunuri@gmail.com<br>
-  <b>Reach me at:</b> +1(980)-322-7651</p>
-  
+  <b>Reach me at:</b> +1(980)-322-7651</p>  
 theme: jekyll-theme-minimal
