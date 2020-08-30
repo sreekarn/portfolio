@@ -11,11 +11,11 @@ Hi there! I am an aspiring Software Engineer with interest in Machine Learning, 
 <p><b>Systems Engineer</b><br>TATA Consultancy Services<br>Jun 2016 - Oct 2019</p>
 
    • Worked as Data Engineer for banking client CitiGroup.
-   <br><br>
+   <br>
    • Helped develop ETL graphs in AbInitio which would automate the process of extracting data from database, cleanse it, apply necessary logics on data and load it back              into the database.
-   <br><br>
+   <br>
    • Worked on three projects during my tenure out of which two as a team member and one as lead of a project.
-   <br><br>
+   <br>
    • Automated workflow using Shell scripting programming language.
    
 
