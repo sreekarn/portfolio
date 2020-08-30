@@ -2,7 +2,8 @@ title: Sreekar Nedunuri # your name (or website title) here
 logo: "/images/DP.jpg" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <b>Aspiring Software Engineer</b><br>
-  <i class="fa fa-home"></i>Charlotte, NC.
+  <div class="list-group">
+  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>Charlotte, NC.</div>
   <br><br>
   <p><a href="www.linkedin.com/in/sreekar-nedunuri-9ba74279">View My LinkedIn Profile</a><br>
   Email: sreekarnedunuri@gmail.com<br>
