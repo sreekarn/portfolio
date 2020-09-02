@@ -8,11 +8,11 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
 
    • Worked as Data Engineer for banking client CitiGroup.
    <br>
-   • Helped develop ETL graphs in AbInitio which would automate the process of extracting data from database, cleanse it, apply necessary logics on data and load it back              into the database.
+   • Helped develop ETL graphs in AbInitio which would automate the process of extracting data from Teradata database, cleanse it in Unix environment, apply necessary logics on      data in AbInitio and load it back into the database. Generate necessary reports using Tableau.
+   <br>
+   • Automated workflow using shell scripting programming language in UNIX environment.
    <br>
    • Worked on three projects during my tenure out of which two as a team member and one as lead of a project.
-   <br>
-   • Automated workflow using shell scripting programming language.
    
 
 ### Projects, Publications and Certifications
