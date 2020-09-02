@@ -24,9 +24,10 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Certifications</b>
 <br><br>
 1. <b>Machine Learning</b> - <i>Stanford University - <a href="https://www.coursera.org/account/accomplishments/verify/WWQ5AZKENMN4">Credentials</a></i><br>
-2. <b>Neural Networks and Deep Learning</b> -<i>deeplearning.ai - <a href="https://www.coursera.org/account/accomplishments/certificate/LVFWH6BMY8RH">Credentials</a></i>
+2. <b>Neural Networks and Deep Learning</b> - <i>deeplearning.ai - <a href="https://www.coursera.org/account/accomplishments/certificate/LVFWH6BMY8RH">Credentials</a></i>
 <br><br>
-<b>Projects</b><br>
+<b>Projects</b>
+<br><br>
 <p><b>1. AWS DeepRacer</b><br>Working on “AWS DeepRacer" project currently under Professor <a href="https://sites.google.com/a/uncc.edu/mcshin/">Min Shin</a> where our objective is to train the model of a self-driving car in the AWS 3D simulator, Experiment with multiple sensor inputs, the latest reinforcement learning algorithms, neural network configurations and simulate them to real domain transfer methods.<br><br><b>2. ShopAnything</b><br>This is a e commerce website built using Java Spring framework, where users can purchase items which can be added to cart and checked out. Admin will have secure portal to add the items into the warehouse. Used Spring MVC, Spring Data, Hibernate, JPA and  Spring Security. Project related code can be found <a href="https://github.com/sreekarn/ShopAnything">here.</a></p>
 
 
