@@ -33,9 +33,11 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 
 ### Skill Set
 <hr>
-<b>Programming Languages:</b> Java, Python(familiar)
+<b>Programming Languages:</b> JJava, Python(familiar), SQL, MATLAB(familiar), SAS(familiar)
 <br>
 <b>Frameworks:</b> SpringBoot
+<br>
+<b>Big Data Platforms Exposure:</b> Hadoop
 <br>
 <b>Cloud Environment:</b> AWS
 <br>
