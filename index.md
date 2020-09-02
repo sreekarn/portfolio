@@ -43,7 +43,7 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <br>
 <b>RDBMS Languages:</b> SQL, PLSQL
 <br>
-<b>Databases:</b> MySQL, Teradata, Oracle10g
+<b>Databases:</b> MySQL, Teradata, Oracle10g, H2
 <br>
 <b>ETL Tools:</b> AbInitio, Informatica
 <br>
