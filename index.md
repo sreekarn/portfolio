@@ -15,12 +15,16 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
    • Automated workflow using shell scripting programming language.
    
 
-### Projects and Publications
+### Projects, Publications and Certifications
 <hr>
 <b>Publication</b>
 <br><br>
 Published a research paper titled “<a href="http://www.ijirset.com/upload/2015/september/55_ASIC.pdf">ASIC Implementation of Three Stage Data Path Logic Structure</a> ” in International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET) with an impact factor of 5.442.
 <br><br>
+<b>Certifications</b>
+<br><br>
+1. <b>Machine Learning</b> - <i>Coursera - <a href="https://www.coursera.org/account/accomplishments/verify/WWQ5AZKENMN4">Credentials</a></i>
+2. <b>Neural Networks and Deep Learning</b> -<i>Coursera -<a href="https://www.coursera.org/account/accomplishments/certificate/LVFWH6BMY8RH">Credentials</a></i>
 <b>Projects</b><br>
 <p><b>1. AWS DeepRacer</b><br>Working on “AWS DeepRacer" project currently under Professor <a href="https://sites.google.com/a/uncc.edu/mcshin/">Min Shin</a> where our objective is to train the model of a self-driving car in the AWS 3D simulator, Experiment with multiple sensor inputs, the latest reinforcement learning algorithms, neural network configurations and simulate them to real domain transfer methods.<br><br><b>2. ShopAnything</b><br>This is a e commerce website built using Java Spring framework, where users can purchase items which can be added to cart and checked out. Admin will have secure portal to add the items into the warehouse. Used Spring MVC, Spring Data, Hibernate, JPA and  Spring Security. Project related code can be found <a href="https://github.com/sreekarn/ShopAnything">here.</a></p>
 
