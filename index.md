@@ -15,7 +15,7 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
    • Worked on three projects during my tenure out of which two as a team member and one as lead of a project.
    
 
-### Projects, Publications and Certifications
+### Publications, Certifications and Projects
 <hr>
 <b>Publication</b>
 <br><br>
