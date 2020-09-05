@@ -7,7 +7,9 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
 <p><b>Graduate Teaching Assistant</b><br>UNC Charlotte<br>Sep 2020 - Present</p>
    
    • Participated in improving course material with professor and provided suggestions to conduct exams and assignments for graduate-level course – Database Systems.
+   <br>
    • Taught and assisted graduate students during recitation and help them learn Sql, Procedural Language for SQL from scratch.
+   <br>
    • Graded papers during assignments, mid-terms and finals 
    
 <p><b>Systems Engineer</b><br>TATA Consultancy Services<br>Sep 2020 - Present</p>
