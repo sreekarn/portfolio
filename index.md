@@ -4,7 +4,10 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
 
 ### Experience
 <hr>
-<p><b>Systems Engineer</b><br>TATA Consultancy Services<br>Jun 2016 - Oct 2019</p>
+<p><b>Graduate Teaching Assistant</b><br>UNC Charlotte<br>Jun 2016 - Oct 2019</p>
+   
+   • Assisted Dr Hugo Carreras for graduate-level course – Database Systems. Tasks included teaching, grading and helping students learn Sql, Procedural Language for SQL from        scratch.
+<p><b>Systems Engineer</b><br>TATA Consultancy Services<br>Sep 2020 - Present</p>
 
    • Worked as Data Engineer for banking client CitiGroup.
    <br>
