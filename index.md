@@ -36,26 +36,34 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <br><br>
 <b>Projects</b>
 <br>
-<p><b>1. AWS DeepRacer</b><br>Working on “AWS DeepRacer" project currently under Professor <a href="https://sites.google.com/a/uncc.edu/mcshin/">Min Shin</a> where our objective is to train the model of a self-driving car in the AWS 3D simulator, Experiment with multiple sensor inputs, the latest reinforcement learning algorithms, neural network configurations and simulate them to real domain transfer methods.<br><br><b>2. ShopAnything</b><br>This is a e commerce website built using Java Spring framework, where users can purchase items which can be added to cart and checked out. Admin will have secure portal to add the items into the warehouse. Used Spring MVC, Spring Data, Hibernate, JPA and  Spring Security. Project related code can be found <a href="https://github.com/sreekarn/ShopAnything">here.</a></p>
+<p><b>1. Real time credit card fraud detection</b><br>Implemented Big Data project using Apache Spark.<br>
+➢ Built a model which will predict if unusual spending is detected in credit card based on previous spending habits.<br>
+➢ Achieved exactly one semantic using Spark Streaming custom offset management.<br>
+➢ Utilized spark ML API’s like String Indexer, Vector Slicer, Standard Scaler and Vector Assembler.<br>
+➢ Machine Learning model is created using the Random Forest Algorithm. Data balancing is done using K-means Algorithm.<br>
+➢ Integration of Spark Streaming is done with Kafka and Cassandra.<br>
+➢ Airflow Automation framework is used to automate Spark Jobs on Spark Standalone Cluster.<br><br><b>2. AWS DeepRacer</b><br>Working on “AWS DeepRacer" project currently under Professor <a href="https://sites.google.com/a/uncc.edu/mcshin/">Min Shin</a> where our objective is to train the model of a self-driving car in the AWS 3D simulator, Experiment with multiple sensor inputs, the latest reinforcement learning algorithms, neural network configurations and simulate them to real domain transfer methods.<br><br><b>3.. ShopAnything</b><br>This is a e commerce website built using Java Spring framework, where users can purchase items which can be added to cart and checked out. Admin will have secure portal to add the items into the warehouse. Used Spring MVC, Spring Data, Hibernate, JPA and  Spring Security. Project related code can be found <a href="https://github.com/sreekarn/ShopAnything">here.</a></p>
 
 
 ### Skill Set
 <hr>
 <b>Programming Languages:</b> Java, Python(familiar), SQL, MATLAB(familiar), SAS(familiar)
 <br>
-<b>Frameworks:</b> SpringBoot
+<b>Frameworks:</b> Apache Spark, Apache Kafka, Apache Hive, Spring Boot
 <br>
-<b>Big Data Platforms Exposure:</b> Hadoop
+<b>Big Data Platforms Exposure:</b> Hadoop, Spark
 <br>
 <b>Cloud Environment:</b> AWS
 <br>
 <b>RDBMS Languages:</b> SQL, PLSQL
 <br>
-<b>Databases:</b> MySQL, Teradata, Oracle10g, H2
+<b>Databases:</b> MySQL, Teradata, Oracle10g, H2, Apache Cassandra
 <br>
 <b>ETL Tools:</b> AbInitio, Informatica
 <br>
 <b>Reporting Tools:</b> Tableau, SAP Business Objects
+<br>
+<b>Tools:</b> Maven, tomcat, GIT
 
 ### Education
 <hr>
