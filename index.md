@@ -36,6 +36,10 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <br><br>
 <b>Projects</b>
 <br>
+<p><b>1. Movie Recommender System using Machine Learning.<br>
+• Worked on “cold start” problem where a recommender system starts without any user data and improves dynamically based on new user inputs.<br>
+• Considered Wikipedia as metadata source and cluster them to obtain initial clusters using k-means.<br>
+• This cluster along with other available data such as movie ratings(IMDB) is clustered again to form a content-based recommendation systems.<br>
 <p><b>1. Real time credit card fraud detection</b><br>Implemented Big Data project using Apache Spark.<br>
 • Built a model which will predict if unusual spending is detected in credit card based on previous spending habits.<br>
 • Achieved exactly one semantic using Spark Streaming custom offset management.<br>
