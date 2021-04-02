@@ -74,7 +74,7 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <br>
 <b>Reporting Tools:</b> Tableau, SAP Business Objects
 <br>
-<b>Tools:</b> Maven, tomcat, GIT
+<b>Tools:</b> Maven, tomcat, GIT<br>
 
 ### Education
 <hr>
