@@ -34,6 +34,7 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
    
 
 ### Publications, Certifications and Projects
+
 <hr>
 <b>Publication</b>
 <br><br>
@@ -67,6 +68,7 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 
 
 ### Skill Set
+
 <hr>
 <b>Programming Languages:</b> Java, Python(familiar), SQL, MATLAB(familiar), SAS(familiar)
 <br>
@@ -87,6 +89,7 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Tools:</b> Maven, tomcat, GIT<br>
 
 ### Education
+
 <hr>
 <b>Master of Science : UNC Charlotte</b><br>Computer Science<br>Jan 2020-Dec 2021<br>
 <b>Bachelor of Technology : CVR College of Engineering</b><br>Electronics and Communication Engineering<br>Jun 2012-May 2016<br>
