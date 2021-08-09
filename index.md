@@ -86,14 +86,13 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Reporting Tools:</b> Tableau, SAP Business Objects
 <br>
 <b>Tools:</b> Maven, tomcat, GIT<br>
-
-
+<br>
 <b>Education</b>
 <hr>
 <b>Master of Science : UNC Charlotte</b><br>Computer Science<br>Jan 2020-Dec 2021<br>
 <b>Bachelor of Technology : CVR College of Engineering</b><br>Electronics and Communication Engineering<br>Jun 2012-May 2016<br>
 
-
+<br>
 <b>Awards and Recognition</b>
 <hr>
 <p>• Received Service and commitment award from TCS.<br>
