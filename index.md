@@ -69,7 +69,6 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 
 ### Skill Set
 <hr>
-
 <b>Programming Languages:</b> Java, Python(familiar), SQL, MATLAB(familiar), SAS(familiar)
 <br>
 <b>Frameworks:</b> Apache Spark, Apache Kafka, Apache Hive, Spring Boot
@@ -88,15 +87,12 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <br>
 <b>Tools:</b> Maven, tomcat, GIT<br>
 
-<hr>
 
 ### Education
-
 <hr>
 <b>Master of Science : UNC Charlotte</b><br>Computer Science<br>Jan 2020-Dec 2021<br>
 <b>Bachelor of Technology : CVR College of Engineering</b><br>Electronics and Communication Engineering<br>Jun 2012-May 2016<br>
 
-<hr>
 
 ### Awards and Recognition
 <hr>
