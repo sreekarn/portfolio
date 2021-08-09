@@ -88,13 +88,13 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Tools:</b> Maven, tomcat, GIT<br>
 
 
-### Education
+#### Education
 <hr>
 <b>Master of Science : UNC Charlotte</b><br>Computer Science<br>Jan 2020-Dec 2021<br>
 <b>Bachelor of Technology : CVR College of Engineering</b><br>Electronics and Communication Engineering<br>Jun 2012-May 2016<br>
 
 
-### Awards and Recognition
+#### Awards and Recognition
 <hr>
 <p>• Received Service and commitment award from TCS.<br>
 • Secured first prize in technical paper presentation on the topic “NFC” in state level technical symposium Srujana 2K15 held at
