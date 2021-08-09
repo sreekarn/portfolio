@@ -4,6 +4,17 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
 
 ### Experience
 <hr>
+
+<p><b>Software Development Engineering Intern</b><br>Siemens Healthineers<br>May 2021 - Present</p>
+   
+• Developed an application using python which would display Dicom format medical images, improved current image viewer speed by leveraging memory mapping and designed viewer which would consume space in memory 10 times lesser than existing application. Designed front end application using React JS.
+
+
+<p><b>Graduate Research Assistant</b><br>UNC Charlotte<br>Feb 2021 - June 2021</p>
+   
+• Designed and implemented Natural language processing models which would detect and extract causal statements from S&P financial company reports.
+• Worked with cross functional teams to understand causal relation complexities. Achieved model accuracy of 78%.
+
 <p><b>Graduate Teaching Assistant</b><br>UNC Charlotte<br>Sep 2020 - Present</p>
    
    • Participated in improving course material with professor and provided suggestions to conduct exams and assignments for graduate-level course – Database Systems.
