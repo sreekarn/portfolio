@@ -4,7 +4,6 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
 
 ### Experience
 <hr>
-
 <p><b>Software Development Engineering Intern</b><br>Siemens Healthineers<br>May 2021 - Present</p>
    
 • Developed an application using python which would display Dicom format medical images, improved current image viewer speed by leveraging memory mapping and designed viewer which would consume space in memory 10 times lesser than existing application. Designed front end application using React JS.
