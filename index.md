@@ -97,6 +97,7 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <br>
 <b>Recommendations</b>
 <hr>
+
 <img src="/images/recommendation.jpg" alt="recommendation">
 
 <b>Awards and Recognition</b>
