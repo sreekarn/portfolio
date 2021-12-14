@@ -99,7 +99,7 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <img src="/images/recommendation.jpg" alt="recommendation">
 
 <b>Awards, Recognition and Recommendations</b>
-
+<hr>
 <p>• Received Service and commitment award from TCS.<br>
 • Secured first prize in technical paper presentation on the topic “NFC” in state level technical symposium Srujana 2K15 held at
    JNT University, Hyderabad.<br>
