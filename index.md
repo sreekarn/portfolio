@@ -43,8 +43,8 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Certifications</b>
 <br><br>
 <b>1. Core JAVA </b> - <i><b>HackerRank</b> - <a href="https://www.hackerrank.com/certificates/f1dc24eb5f51">Credentials</a></i><br>
-<b>1. Machine Learning</b> - <i><b>Stanford University</b> - <a href="https://www.coursera.org/account/accomplishments/verify/WWQ5AZKENMN4">Credentials</a></i><br>
-<b>2. Neural Networks and Deep Learning</b> - <i><b>deeplearning.ai</b> - <a href="https://www.coursera.org/account/accomplishments/certificate/LVFWH6BMY8RH">Credentials</a></i>
+<b>2. Machine Learning</b> - <i><b>Stanford University</b> - <a href="https://www.coursera.org/account/accomplishments/verify/WWQ5AZKENMN4">Credentials</a></i><br>
+<b>3. Neural Networks and Deep Learning</b> - <i><b>deeplearning.ai</b> - <a href="https://www.coursera.org/account/accomplishments/certificate/LVFWH6BMY8RH">Credentials</a></i>
 <br><br>
 <b>Projects</b>
 <br>
