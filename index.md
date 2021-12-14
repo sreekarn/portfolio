@@ -96,6 +96,7 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <br>
 <b>Awards and Recognition</b>
 <hr>
+<img src="/images/DP.jpg" alt="Italian Trulli">
 <p>• Received Service and commitment award from TCS.<br>
 • Secured first prize in technical paper presentation on the topic “NFC” in state level technical symposium Srujana 2K15 held at
    JNT University, Hyderabad.<br>
