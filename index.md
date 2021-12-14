@@ -1,12 +1,12 @@
 ### About me 
 <hr>
-Hi there! I am current graduate computer science student aspiring to be a Software Engineer. I'm currently pursuing my master's degree in Computer Science at UNC Charlotte. I have worked for 3 and half years at TATA Consultancy Services as Data Engineer at Hyderabad, India. I'm actively looking for internship opportunities for Summer 2021.
+Hi there! I am current graduate computer science student aspiring to be a Software Engineer. I'm currently pursuing my master's degree in Computer Science at UNC Charlotte. I have internship experience at Siemens Healthineers for 7 months. Prior to my masters, I have worked for 3 and half years at TATA Consultancy Services in Hyderabad, India.
 
 ### Experience
 <hr>
-<p><b>Software Development Engineering Intern</b><br>Siemens Healthineers<br>May 2021 - Present</p>
+<p><b>Software Development Engineering Intern</b><br>Siemens Healthineers<br>May 2021 - November 2021</p>
    
-• Developed an application using python which would display Dicom format medical images, improved current image viewer speed by leveraging memory mapping and designed viewer which would consume space in memory 10 times lesser than existing application. Designed front end application using React JS.
+• Developed an application using python which would display Dicom format medical images, improved current image viewer speed by leveraging memory mapping and designed viewer which would consume space in memory 10 times lesser than existing application.
 
 
 <p><b>Graduate Research Assistant</b><br>UNC Charlotte<br>Feb 2021 - June 2021</p>
@@ -26,7 +26,7 @@ Hi there! I am current graduate computer science student aspiring to be a Softwa
 
    • Worked as Data Engineer for banking client CitiGroup.
    <br>
-   • Helped develop ETL graphs in AbInitio which would automate the process of extracting data from Teradata database, cleanse it in Unix environment, apply necessary logics on      data in AbInitio and load it back into the database. Generate necessary reports using Tableau.
+   • Helped develop ETL graphs in AbInitio which would automate the process of extracting data from Teradata database, cleanse it in Unix environment, apply necessary logics on data in AbInitio and load it back into the database. Generate necessary reports using Tableau.
    <br>
    • Automated workflow using shell scripting programming language in UNIX environment.
    <br>
