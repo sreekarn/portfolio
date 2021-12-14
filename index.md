@@ -94,9 +94,9 @@ Published a research paper titled “<a href="http://www.ijirset.com/upload/2015
 <b>Bachelor of Technology : CVR College of Engineering</b><br>Electronics and Communication Engineering<br>Jun 2012-May 2016<br>
 
 <br>
-<b>Awards and Recognition</b>
+<b>Awards, Recognition and Recommendations</b>
 <hr>
-<img src="/images/recommendation.jpg" alt="Italian Trulli">
+<img src="/images/recommendation.jpg" alt="recommendation">
 <p>• Received Service and commitment award from TCS.<br>
 • Secured first prize in technical paper presentation on the topic “NFC” in state level technical symposium Srujana 2K15 held at
    JNT University, Hyderabad.<br>
