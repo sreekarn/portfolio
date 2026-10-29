@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sreekar Nedunuri · Platforms, reliability, and what changes cost</title>
-  <meta name="description" content="Sreekar Nedunuri: VP and Senior Software Engineer at Goldman Sachs, founder of CostTrace. Event-driven platforms, observability, safe deploys, and measuring what each change costs.">
+  <meta name="description" content="Sreekar Nedunuri: VP and Senior Software Engineer at Goldman Sachs. Event-driven platforms, observability, safe releases, and measuring what each change costs.">
   <meta property="og:title" content="Sreekar Nedunuri">
-  <meta property="og:description" content="I build platforms that move a million events a day, and tools that tell you what each change costs.">
+  <meta property="og:description" content="I build high-volume platforms that are safe to change, and tools that tell you what each change costs.">
   <meta property="og:image" content="https://sreekarn.github.io/portfolio/images/sreekar.jpg">
   <link rel="icon" href="images/sreekar.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@
     /* numbers */
     .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
     .stat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
-    .stat b { display: block; font-family: "Bricolage Grotesque"; font-size: 30px; font-weight: 800; }
+    .stat b { display: block; font-family: "Bricolage Grotesque"; font-size: 24px; font-weight: 800; white-space: nowrap; }
     .stat span { color: var(--muted); font-size: 14px; }
     @media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
@@ -132,7 +132,7 @@
       <span class="name">Sreekar Nedunuri</span>
       <div class="links">
         <a href="#why">Why me</a>
-        <a href="#costtrace">CostTrace</a>
+        <a href="#costtrace">Side project</a>
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
         <a href="#writing">Writing</a>
@@ -145,8 +145,8 @@
     <header class="hero">
       <div>
         <span class="kicker">Platforms · Reliability · Cost</span>
-        <h1>I build platforms that move <span class="grad">a million events a day</span>, and tools that tell you what each change costs.</h1>
-        <p class="lead">VP and Senior Software Engineer at Goldman Sachs, leading a Kafka-based platform for Private Wealth clients. Founder of CostTrace. I like systems that are fast, safe to change, and honest about their numbers.</p>
+        <h1>I build high-volume platforms that are <span class="grad">safe to change</span>, and tools that tell you what each change costs.</h1>
+        <p class="lead">VP and Senior Software Engineer at Goldman Sachs, leading an event-driven platform for wealth management clients. On the side, I build tools that measure what code changes cost in the cloud. I like systems that are fast, safe to change, and honest about their numbers.</p>
         <div class="pills">
           <span class="pill">📍 Dallas, TX · open to relocation</span>
           <span class="pill">☕ Java · Kafka · Kubernetes · AWS</span>
@@ -156,7 +156,7 @@
           <a class="btn primary" href="#contact">✍️ Drop me a note</a>
           <a class="btn" href="mailto:sreekarnedunuri@gmail.com">✉️ Email me</a>
           <a class="btn" href="https://www.linkedin.com/in/sreekarnedunuri/">LinkedIn ↗</a>
-          <a class="btn" href="https://costtrace.io">CostTrace ↗</a>
+          <a class="btn" href="#costtrace">Side project ↓</a>
         </div>
       </div>
       <img class="avatar" src="images/sreekar.jpg" alt="Sreekar Nedunuri" width="220" height="220">
@@ -164,30 +164,25 @@
 
     <div class="stats" aria-label="Highlights">
       <div class="stat"><b>8+ yrs</b><span>shipping where mistakes cost real money: Goldman Sachs, Citigroup</span></div>
-      <div class="stat"><b>1M/day</b><span>Kafka events through 10+ services on the platform I lead</span></div>
-      <div class="stat"><b>~93%</b><span>e-delivery for 150+ communications to tens of thousands of clients</span></div>
-      <div class="stat"><b>4 teams</b><span>adopted tools I built: an exporter and an AI code-review agent</span></div>
+      <div class="stat"><b>Event-driven</b><span>high-volume Kafka platforms, from design to production</span></div>
+      <div class="stat"><b>Zero-downtime</b><span>releases with blue-green, canary and automatic verification</span></div>
+      <div class="stat"><b>Multi-team</b><span>internal tools I built that other teams adopted on their own</span></div>
     </div>
 
     <section id="costtrace">
-      <span class="kicker">Now building</span>
+      <span class="kicker">Side project</span>
       <div class="feature" style="margin-top:14px">
         <div>
           <div>
-            <span class="pill">🚀 Early access · Claude Startups program</span>
             <h3 class="display">CostTrace: what did that deploy <span class="grad">actually cost?</span></h3>
-            <p class="sub" style="margin-bottom:16px">Cloud bills show up a month late, as one big number. CostTrace reads a company's own billing export and ties measured cost back to the deploys and pull requests that changed it, with an honest ± range on every figure.</p>
+            <p class="sub" style="margin-bottom:16px">Cloud bills show up a month late, as one big number. CostTrace, my side project in cloud cost attribution, reads a team's own billing export and ties measured cost back to the deploys and pull requests that changed it, with an honest ± range on every figure.</p>
             <ul>
               <li>Built on the FinOps <b>FOCUS</b> standard, so one engine reads AWS, Azure, Google Cloud and Oracle Cloud bills.</li>
               <li>A <b>GitHub Action</b> comments the measured cost of each pull request a day or two after it ships.</li>
               <li><code>costtrace explain</code> answers "why did the bill change this month?", service by service.</li>
               <li>An <b>MCP server</b> lets AI coding agents ask what a change cost and trace it to the code behind it.</li>
-              <li>Local-first: billing data never leaves the customer's environment. It says "coincides with", never "caused".</li>
+              <li>Local-first: billing data never leaves your environment. It says "coincides with", never "caused".</li>
             </ul>
-            <div class="btns" style="margin-top:18px">
-              <a class="btn primary" href="https://costtrace.io">Visit costtrace.io ↗</a>
-              <a class="btn" href="mailto:founder@costtrace.io">Ask for early access</a>
-            </div>
           </div>
           <div class="flow" aria-label="How CostTrace works">
             <div class="step"><b>🧾 Your billing export</b><span>FOCUS data from your cloud account</span></div>
@@ -210,14 +205,14 @@
         <article class="reason">
           <span class="emoji">🚀</span>
           <h3>I land the hard migrations</h3>
-          <p>I led my platform's move to event-driven Kafka: the event schemas, the orchestration, 10+ services.</p>
-          <p class="receipt">🧾 100K–1M events a day in production, for tens of thousands of clients</p>
+          <p>I led my platform's move to an event-driven Kafka architecture: the event schemas, the orchestration, the cutover.</p>
+          <p class="receipt">🧾 Running in production at high volume for a global bank's clients</p>
         </article>
         <article class="reason">
           <span class="emoji">🛠️</span>
           <h3>I build tools other teams adopt</h3>
-          <p>Not just for my team. A metrics exporter and an AI code-review agent that spread on their own.</p>
-          <p class="receipt">🧾 Each one used by 4 teams across the division</p>
+          <p>Not just for my team. Monitoring and AI-assisted code review tooling that spread on their own.</p>
+          <p class="receipt">🧾 Adopted by other teams across my division</p>
         </article>
         <article class="reason">
           <span class="emoji">🚦</span>
@@ -228,8 +223,8 @@
         <article class="reason">
           <span class="emoji">💸</span>
           <h3>I care what software costs</h3>
-          <p>Enough to build a company around it. CostTrace ties each deploy to what it did to the cloud bill.</p>
-          <p class="receipt">🧾 Founder of CostTrace, accepted into the Claude Startups program</p>
+          <p>Enough to spend my evenings on it. CostTrace ties each deploy to what it did to the cloud bill.</p>
+          <p class="receipt">🧾 A working tool across four clouds, with a CLI, GitHub Action and MCP server</p>
         </article>
         <article class="reason">
           <span class="emoji">📏</span>
@@ -241,7 +236,7 @@
           <span class="emoji">🤖</span>
           <h3>I already work AI-native</h3>
           <p>I build with Claude Code every day and design tools that AI agents can use as well as people.</p>
-          <p class="receipt">🧾 CostTrace's MCP server for coding agents, plus the AI code-review agent</p>
+          <p class="receipt">🧾 An MCP server for coding agents, plus AI code review in CI/CD</p>
         </article>
       </div>
       <p class="sub" style="margin-top:22px">Still not convinced? <a href="#contact">Let's talk ✍️</a> I'll bring more receipts.</p>
@@ -258,18 +253,18 @@
           <h3>Vice President, Senior Software Engineer</h3>
           <div class="org">Goldman Sachs · Salt Lake City, UT</div>
           <ul>
-            <li>Lead engineer for the Client Communication Platform for Private Wealth Management: 150+ global communications at ~93% e-delivery to tens of thousands of clients.</li>
-            <li>Led the move to an event-driven architecture (Kafka + MongoDB): event schemas and orchestration across 10+ microservices, now 100K–1M events a day.</li>
-            <li>Helped build an AI code-review agent in CI/CD that four teams use on every merge request.</li>
-            <li>Built the observability platform on OpenShift (Prometheus, Grafana, Elasticsearch, Jaeger, OpenTelemetry) and a MongoDB-to-Prometheus exporter adopted by four teams.</li>
+            <li>Lead engineer for a client communications platform in wealth management, serving a large global client base.</li>
+            <li>Led its move to an event-driven architecture (Kafka + MongoDB): event schemas, orchestration across many microservices, and a high-volume production cutover.</li>
+            <li>Helped build AI-assisted code review into CI/CD, now used beyond my own team.</li>
+            <li>Built the platform's observability (Prometheus, Grafana, Elasticsearch, Jaeger, OpenTelemetry on OpenShift) and monitoring tooling other teams adopted.</li>
           </ul>
           <details>
             <summary>More from Goldman</summary>
             <ul>
               <li>Blue-green and canary releases, plus post-deploy regression testing in CI/CD, for single-click, zero-downtime changes.</li>
               <li>Spring Security, OAuth2 and JWT across the admin and client-facing layers.</li>
-              <li>Backend lead for the Documents module on goldman.com and for Document Vault, a secure document workspace for clients and advisors, owned end to end on AWS.</li>
-              <li>Led the platform's AWS strategy, starting with an ECS/Fargate pilot whose patterns other teams reuse.</li>
+              <li>Backend lead for secure, client-facing document services, owned end to end on AWS.</li>
+              <li>Led the platform's cloud migration strategy, starting with a pilot whose patterns other teams reuse.</li>
               <li>Mentor engineers on system design and code quality.</li>
             </ul>
           </details>
