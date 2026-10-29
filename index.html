@@ -84,6 +84,17 @@
     .tag { background: var(--chip); border-radius: 8px; padding: 2px 8px; font-size: 12px; color: var(--muted); }
     @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
 
+    /* why hire me */
+    .why { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .reason { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; transition: transform .15s, border-color .15s; }
+    .reason:hover { transform: translateY(-3px) rotate(-0.4deg); border-color: color-mix(in srgb, var(--violet) 50%, var(--line)); }
+    .reason .emoji { font-size: 28px; }
+    .reason h3 { font-size: 20px; margin: 8px 0 6px; }
+    .reason p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+    .reason .receipt { margin: auto 0 0; padding: 8px 10px; border: 1px dashed color-mix(in srgb, var(--violet) 45%, var(--line)); border-radius: 10px; background: color-mix(in srgb, var(--violet) 6%, transparent); color: var(--ink); font-size: 13px; font-weight: 500; }
+    @media (max-width: 860px) { .why { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 560px) { .why { grid-template-columns: 1fr; } }
+
     /* timeline */
     .job { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
     .job:first-of-type { border-top: 0; }
@@ -120,6 +131,7 @@
     <div class="wrap">
       <span class="name">Sreekar Nedunuri</span>
       <div class="links">
+        <a href="#why">Why me</a>
         <a href="#costtrace">CostTrace</a>
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
@@ -188,6 +200,51 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="why">
+      <span class="kicker">The pitch</span>
+      <h2>Why should you hire me? <span class="grad">With receipts.</span></h2>
+      <p class="sub">Six reasons, each one backed by something I've actually shipped.</p>
+      <div class="why">
+        <article class="reason">
+          <span class="emoji">🚀</span>
+          <h3>I land the hard migrations</h3>
+          <p>I led my platform's move to event-driven Kafka: the event schemas, the orchestration, 10+ services.</p>
+          <p class="receipt">🧾 100K–1M events a day in production, for tens of thousands of clients</p>
+        </article>
+        <article class="reason">
+          <span class="emoji">🛠️</span>
+          <h3>I build tools other teams adopt</h3>
+          <p>Not just for my team. A metrics exporter and an AI code-review agent that spread on their own.</p>
+          <p class="receipt">🧾 Each one used by 4 teams across the division</p>
+        </article>
+        <article class="reason">
+          <span class="emoji">🚦</span>
+          <h3>I make releases boring</h3>
+          <p>Blue-green and canary releases, regression tests that run themselves after every deploy, rollbacks that work.</p>
+          <p class="receipt">🧾 Single-click, zero-downtime releases in a heavily regulated bank</p>
+        </article>
+        <article class="reason">
+          <span class="emoji">💸</span>
+          <h3>I care what software costs</h3>
+          <p>Enough to build a company around it. CostTrace ties each deploy to what it did to the cloud bill.</p>
+          <p class="receipt">🧾 Founder of CostTrace, accepted into the Claude Startups program</p>
+        </article>
+        <article class="reason">
+          <span class="emoji">📏</span>
+          <h3>I'm honest with numbers</h3>
+          <p>Ranges, not false precision. "Coincides with", never "caused" unless it's proven. Same rigor as research.</p>
+          <p class="receipt">🧾 Peer-reviewed NLP paper, 4.0 GPA M.S. in Computer Science</p>
+        </article>
+        <article class="reason">
+          <span class="emoji">🤖</span>
+          <h3>I already work AI-native</h3>
+          <p>I build with Claude Code every day and design tools that AI agents can use as well as people.</p>
+          <p class="receipt">🧾 CostTrace's MCP server for coding agents, plus the AI code-review agent</p>
+        </article>
+      </div>
+      <p class="sub" style="margin-top:22px">Still not convinced? <a href="#contact">Let's talk ✍️</a> I'll bring more receipts.</p>
     </section>
 
     <section id="work">
