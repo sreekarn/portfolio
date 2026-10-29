@@ -96,14 +96,20 @@
     @media (max-width: 560px) { .why { grid-template-columns: 1fr; } }
 
     /* timeline */
-    .job { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
-    .job:first-of-type { border-top: 0; }
-    .job .when { color: var(--faint); font-size: 14px; }
-    .job h3 { font-size: 21px; margin: 0; }
-    .job .org { color: var(--muted); margin-bottom: 10px; }
-    .job ul { margin: 0; padding-left: 18px; }
-    .job li { margin-bottom: 6px; }
-    details summary { cursor: pointer; color: var(--violet); font-weight: 600; font-size: 14px; margin-top: 6px; }
+    .timeline { position: relative; display: grid; gap: 18px; margin-top: 8px; }
+    .timeline::before { content: ""; position: absolute; left: 27px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(var(--violet), var(--fuchsia), var(--amber)); opacity: .5; }
+    .role { position: relative; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 18px; }
+    .badge { position: relative; z-index: 1; width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: var(--brand); color: #fff; font-family: "Bricolage Grotesque"; font-weight: 800; font-size: 17px; letter-spacing: .02em; box-shadow: 0 0 0 4px var(--bg); }
+    .role-body { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--brand); border-radius: 18px; padding: 20px 22px; transition: transform .15s; }
+    .role-body:hover { transform: translateX(3px); }
+    .role-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+    .role h3 { font-size: 21px; margin: 0; }
+    .role .org { color: var(--muted); }
+    .role .when { color: var(--faint); font-size: 14px; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+    .live { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px color-mix(in srgb, #22c55e 25%, transparent); animation: pulse 2s infinite; }
+    @keyframes pulse { 50% { box-shadow: 0 0 0 7px color-mix(in srgb, #22c55e 0%, transparent); } }
+    .summary { color: var(--muted); margin: 6px 0 12px; }
+    @media (max-width: 600px) { .timeline::before { display: none; } .role { grid-template-columns: 1fr; gap: 10px; } .badge { width: 46px; height: 46px; font-size: 15px; } }
     @media (max-width: 680px) { .job { grid-template-columns: 1fr; gap: 4px; } }
 
     /* skills */
@@ -245,66 +251,65 @@
     <section id="work">
       <span class="kicker">Work</span>
       <h2>Where I've shipped</h2>
-      <p class="sub">The highlights. Happy to go deeper in a conversation.</p>
+      <p class="sub">The short version. Happy to go deeper in a conversation.</p>
 
-      <div class="job">
-        <div class="when">Mar 2022 – now</div>
-        <div>
-          <h3>Vice President, Senior Software Engineer</h3>
-          <div class="org">Goldman Sachs · Salt Lake City, UT</div>
-          <ul>
-            <li>Lead engineer for a client communications platform in wealth management, serving a large global client base.</li>
-            <li>Led its move to an event-driven architecture (Kafka + MongoDB): event schemas, orchestration across many microservices, and a high-volume production cutover.</li>
-            <li>Helped build AI-assisted code review into CI/CD, now used beyond my own team.</li>
-            <li>Built the platform's observability (Prometheus, Grafana, Elasticsearch, Jaeger, OpenTelemetry on OpenShift) and monitoring tooling other teams adopted.</li>
-          </ul>
-          <details>
-            <summary>More from Goldman</summary>
-            <ul>
-              <li>Blue-green and canary releases, plus post-deploy regression testing in CI/CD, for single-click, zero-downtime changes.</li>
-              <li>Spring Security, OAuth2 and JWT across the admin and client-facing layers.</li>
-              <li>Backend lead for secure, client-facing document services, owned end to end on AWS.</li>
-              <li>Led the platform's cloud migration strategy, starting with a pilot whose patterns other teams reuse.</li>
-              <li>Mentor engineers on system design and code quality.</li>
-            </ul>
-          </details>
+      <div class="timeline">
+      <article class="role" style="--brand:#6f9fd8">
+        <span class="badge" aria-hidden="true">GS</span>
+        <div class="role-body">
+          <div class="role-head">
+            <div>
+              <h3>Vice President, Senior Software Engineer</h3>
+              <div class="org">Goldman Sachs · Salt Lake City, UT</div>
+            </div>
+            <span class="when"><i class="live"></i> Mar 2022 – now</span>
+          </div>
+          <p class="summary">Building event-driven platforms for wealth management.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Kafka</span><span class="tag">MongoDB</span><span class="tag">OpenShift</span><span class="tag">AWS</span><span class="tag">Helm</span><span class="tag">OpenTelemetry</span></div>
         </div>
-      </div>
-
-      <div class="job">
-        <div class="when">May 2021 – Nov 2021</div>
-        <div>
-          <h3>ML Cloud Tools Developer Intern</h3>
-          <div class="org">Siemens Healthineers · Malvern, PA</div>
-          <ul>
-            <li>Built a Python DICOM image viewer with memory-mapped processing: 10× less memory on large radiology datasets.</li>
-            <li>Built a React UI that sped up medical image rendering for clinical workflows.</li>
-          </ul>
+      </article>
+      <article class="role" style="--brand:#ec6602">
+        <span class="badge" aria-hidden="true">SH</span>
+        <div class="role-body">
+          <div class="role-head">
+            <div>
+              <h3>ML Cloud Tools Developer Intern</h3>
+              <div class="org">Siemens Healthineers · Malvern, PA</div>
+            </div>
+            <span class="when">May – Nov 2021</span>
+          </div>
+          <p class="summary">Medical imaging tools for clinical teams.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">React</span><span class="tag">WebSockets</span><span class="tag">DICOM</span></div>
         </div>
-      </div>
-
-      <div class="job">
-        <div class="when">Sep 2020 – May 2021</div>
-        <div>
-          <h3>Graduate Research &amp; Teaching Assistant</h3>
-          <div class="org">UNC Charlotte · Charlotte, NC</div>
-          <ul>
-            <li>NLP models that extract causal relationships from S&amp;P 500 financial reports, later published in MDPI Information (2023).</li>
-            <li>Teaching assistant for graduate Database Systems.</li>
-          </ul>
+      </article>
+      <article class="role" style="--brand:#005035">
+        <span class="badge" aria-hidden="true">UNC</span>
+        <div class="role-body">
+          <div class="role-head">
+            <div>
+              <h3>Graduate Research &amp; Teaching Assistant</h3>
+              <div class="org">UNC Charlotte · Charlotte, NC</div>
+            </div>
+            <span class="when">Sep 2020 – May 2021</span>
+          </div>
+          <p class="summary">NLP research in finance, and teaching.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">BERT</span><span class="tag">NLP</span><span class="tag">SQL</span></div>
         </div>
-      </div>
-
-      <div class="job">
-        <div class="when">Jun 2016 – Oct 2019</div>
-        <div>
-          <h3>Systems Engineer (client: Citigroup)</h3>
-          <div class="org">Tata Consultancy Services · Hyderabad, India</div>
-          <ul>
-            <li>Spring Boot microservices for Citigroup, including a centralized Spring Batch monitor, at 95% unit test coverage.</li>
-            <li>Indexed legacy SQL modules and cut query response times by 40%.</li>
-          </ul>
+      </article>
+      <article class="role" style="--brand:#3a4fb0">
+        <span class="badge" aria-hidden="true">TCS</span>
+        <div class="role-body">
+          <div class="role-head">
+            <div>
+              <h3>Systems Engineer (client: Citigroup)</h3>
+              <div class="org">Tata Consultancy Services · Hyderabad, India</div>
+            </div>
+            <span class="when">Jun 2016 – Oct 2019</span>
+          </div>
+          <p class="summary">Backend services for a global bank.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Spring Batch</span><span class="tag">SQL Server</span><span class="tag">JUnit</span></div>
         </div>
+      </article>
       </div>
     </section>
 
