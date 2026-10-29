@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sreekar Nedunuri · Platforms, reliability, and what changes cost</title>
+  <meta name="description" content="Sreekar Nedunuri: VP and Senior Software Engineer at Goldman Sachs, founder of CostTrace. Event-driven platforms, observability, safe deploys, and measuring what each change costs.">
+  <meta property="og:title" content="Sreekar Nedunuri">
+  <meta property="og:description" content="I build platforms that move a million events a day, and tools that tell you what each change costs.">
+  <meta property="og:image" content="https://sreekarn.github.io/portfolio/images/sreekar.jpg">
+  <link rel="icon" href="images/sreekar.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf8; --card: #ffffff; --ink: #1c1917; --muted: #57534e; --faint: #a8a29e; --line: #e7e5e4;
+      --violet: #7c3aed; --fuchsia: #c026d3; --amber: #f59e0b; --chip: #f5f5f4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0c0a09; --card: #171412; --ink: #f5f5f4; --muted: #d6d3d1; --faint: #78716c; --line: #292524; --chip: #1f1b18; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: var(--violet); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+    h1, h2, h3, .display { font-family: "Bricolage Grotesque", Inter, sans-serif; letter-spacing: -0.02em; line-height: 1.15; }
+    h2 { font-size: 30px; margin: 0 0 6px; }
+    .kicker { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--violet); }
+    .sub { color: var(--muted); margin: 0 0 26px; }
+    section { padding: 64px 0 8px; }
+    .grad { background: linear-gradient(90deg, var(--violet), var(--fuchsia) 55%, var(--amber)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+    /* nav */
+    nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom: 1px solid var(--line); }
+    nav .wrap { display: flex; align-items: center; gap: 18px; height: 56px; }
+    nav .name { font-family: "Bricolage Grotesque"; font-weight: 800; color: var(--ink); }
+    nav .links { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+    nav .links a { color: var(--muted); }
+    @media (max-width: 640px) { nav .links a:not(.cta) { display: none; } }
+
+    /* hero */
+    .hero { padding: 72px 0 40px; display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 40px; align-items: center; }
+    .hero h1 { font-size: clamp(36px, 5.2vw, 56px); margin: 10px 0 18px; font-weight: 800; }
+    .hero p.lead { font-size: 19px; color: var(--muted); max-width: 640px; margin: 0 0 24px; }
+    .avatar { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; object-position: 50% 50%; border: 4px solid var(--card); box-shadow: 0 0 0 3px var(--violet), 0 20px 40px -20px rgba(124, 58, 237, .6); }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
+    .pill { background: var(--chip); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 13px; color: var(--muted); }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 12px; font-weight: 600; font-size: 15px; border: 1px solid var(--line); color: var(--ink); background: var(--card); }
+    .btn:hover { text-decoration: none; border-color: var(--violet); }
+    .btn.primary { background: var(--violet); border-color: var(--violet); color: #fff; }
+    @media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding-top: 40px; } .avatar { width: 140px; height: 140px; order: -1; } }
+
+    /* numbers */
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .stat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+    .stat b { display: block; font-family: "Bricolage Grotesque"; font-size: 30px; font-weight: 800; }
+    .stat span { color: var(--muted); font-size: 14px; }
+    @media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+    /* costtrace feature */
+    .feature { border-radius: 22px; padding: 2px; background: linear-gradient(135deg, var(--violet), var(--fuchsia), var(--amber)); }
+    .feature > div { background: var(--card); border-radius: 20px; padding: 32px; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; }
+    .feature h3 { font-size: 34px; margin: 6px 0 10px; }
+    .feature ul { margin: 0; padding-left: 20px; color: var(--muted); }
+    .feature li { margin-bottom: 8px; }
+    .flow { display: grid; gap: 10px; align-content: start; }
+    .step { border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; background: var(--bg); font-size: 14px; }
+    .step b { display: block; font-size: 15px; color: var(--ink); }
+    .step span { color: var(--muted); }
+    .arrow { text-align: center; color: var(--faint); line-height: 1; }
+    @media (max-width: 860px) { .feature > div { grid-template-columns: 1fr; padding: 24px; } }
+
+    /* cards */
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; transition: transform .15s, border-color .15s; }
+    .card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--violet) 50%, var(--line)); }
+    .card h3 { font-size: 20px; margin: 0 0 6px; }
+    .card p { margin: 0 0 10px; color: var(--muted); font-size: 15px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { background: var(--chip); border-radius: 8px; padding: 2px 8px; font-size: 12px; color: var(--muted); }
+    @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
+
+    /* timeline */
+    .job { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+    .job:first-of-type { border-top: 0; }
+    .job .when { color: var(--faint); font-size: 14px; }
+    .job h3 { font-size: 21px; margin: 0; }
+    .job .org { color: var(--muted); margin-bottom: 10px; }
+    .job ul { margin: 0; padding-left: 18px; }
+    .job li { margin-bottom: 6px; }
+    details summary { cursor: pointer; color: var(--violet); font-weight: 600; font-size: 14px; margin-top: 6px; }
+    @media (max-width: 680px) { .job { grid-template-columns: 1fr; gap: 4px; } }
+
+    /* skills */
+    .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
+    .skills h4 { margin: 0 0 6px; font-size: 14px; color: var(--muted); font-weight: 600; }
+    @media (max-width: 680px) { .skills { grid-template-columns: 1fr; } }
+
+    footer { margin-top: 72px; padding: 40px 0 56px; border-top: 1px solid var(--line); color: var(--muted); }
+    footer .big { font-family: "Bricolage Grotesque"; font-size: clamp(26px, 4vw, 40px); font-weight: 800; color: var(--ink); margin: 0 0 16px; }
+    .quote { font-style: italic; color: var(--faint); margin-top: 26px; font-size: 14px; }
+    .contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+    .note { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; display: grid; gap: 14px; }
+    .note label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink); }
+    .note input, .note textarea { font: inherit; font-weight: 400; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+    .note input:focus, .note textarea:focus { outline: 2px solid var(--violet); outline-offset: 1px; border-color: transparent; }
+    .note button { justify-self: start; cursor: pointer; }
+    .note button:disabled { opacity: .6; cursor: wait; }
+    .note .status { margin: 0; min-height: 1.4em; font-size: 14px; color: var(--muted); }
+    .trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+    @media (max-width: 760px) { .contact { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <span class="name">Sreekar Nedunuri</span>
+      <div class="links">
+        <a href="#costtrace">CostTrace</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a class="cta" href="#contact">Say hi 👋</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero">
+      <div>
+        <span class="kicker">Platforms · Reliability · Cost</span>
+        <h1>I build platforms that move <span class="grad">a million events a day</span>, and tools that tell you what each change costs.</h1>
+        <p class="lead">VP and Senior Software Engineer at Goldman Sachs, leading a Kafka-based platform for Private Wealth clients. Founder of CostTrace. I like systems that are fast, safe to change, and honest about their numbers.</p>
+        <div class="pills">
+          <span class="pill">📍 Dallas, TX · open to relocation</span>
+          <span class="pill">☕ Java · Kafka · Kubernetes · AWS</span>
+          <span class="pill">🤖 Builds daily with Claude Code</span>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="#contact">✍️ Drop me a note</a>
+          <a class="btn" href="mailto:sreekarnedunuri@gmail.com">✉️ Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/sreekarnedunuri/">LinkedIn ↗</a>
+          <a class="btn" href="https://costtrace.io">CostTrace ↗</a>
+        </div>
+      </div>
+      <img class="avatar" src="images/sreekar.jpg" alt="Sreekar Nedunuri" width="220" height="220">
+    </header>
+
+    <div class="stats" aria-label="Highlights">
+      <div class="stat"><b>8+ yrs</b><span>shipping where mistakes cost real money: Goldman Sachs, Citigroup</span></div>
+      <div class="stat"><b>1M/day</b><span>Kafka events through 10+ services on the platform I lead</span></div>
+      <div class="stat"><b>~93%</b><span>e-delivery for 150+ communications to tens of thousands of clients</span></div>
+      <div class="stat"><b>4 teams</b><span>adopted tools I built: an exporter and an AI code-review agent</span></div>
+    </div>
+
+    <section id="costtrace">
+      <span class="kicker">Now building</span>
+      <div class="feature" style="margin-top:14px">
+        <div>
+          <div>
+            <span class="pill">🚀 Early access · Claude Startups program</span>
+            <h3 class="display">CostTrace: what did that deploy <span class="grad">actually cost?</span></h3>
+            <p class="sub" style="margin-bottom:16px">Cloud bills show up a month late, as one big number. CostTrace reads a company's own billing export and ties measured cost back to the deploys and pull requests that changed it, with an honest ± range on every figure.</p>
+            <ul>
+              <li>Built on the FinOps <b>FOCUS</b> standard, so one engine reads AWS, Azure, Google Cloud and Oracle Cloud bills.</li>
+              <li>A <b>GitHub Action</b> comments the measured cost of each pull request a day or two after it ships.</li>
+              <li><code>costtrace explain</code> answers "why did the bill change this month?", service by service.</li>
+              <li>An <b>MCP server</b> lets AI coding agents ask what a change cost and trace it to the code behind it.</li>
+              <li>Local-first: billing data never leaves the customer's environment. It says "coincides with", never "caused".</li>
+            </ul>
+            <div class="btns" style="margin-top:18px">
+              <a class="btn primary" href="https://costtrace.io">Visit costtrace.io ↗</a>
+              <a class="btn" href="mailto:founder@costtrace.io">Ask for early access</a>
+            </div>
+          </div>
+          <div class="flow" aria-label="How CostTrace works">
+            <div class="step"><b>🧾 Your billing export</b><span>FOCUS data from your cloud account</span></div>
+            <div class="arrow">↓</div>
+            <div class="step"><b>🔀 Your deploys and PRs</b><span>tags, timestamps and changed services</span></div>
+            <div class="arrow">↓</div>
+            <div class="step"><b>📈 Measured change ± range</b><span>before vs after, with day-to-day noise accounted for</span></div>
+            <div class="arrow">↓</div>
+            <div class="step"><b>💬 Where you work</b><span>PR comments, the CLI, or your AI agent</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <span class="kicker">Work</span>
+      <h2>Where I've shipped</h2>
+      <p class="sub">The highlights. Happy to go deeper in a conversation.</p>
+
+      <div class="job">
+        <div class="when">Mar 2022 – now</div>
+        <div>
+          <h3>Vice President, Senior Software Engineer</h3>
+          <div class="org">Goldman Sachs · Salt Lake City, UT</div>
+          <ul>
+            <li>Lead engineer for the Client Communication Platform for Private Wealth Management: 150+ global communications at ~93% e-delivery to tens of thousands of clients.</li>
+            <li>Led the move to an event-driven architecture (Kafka + MongoDB): event schemas and orchestration across 10+ microservices, now 100K–1M events a day.</li>
+            <li>Helped build an AI code-review agent in CI/CD that four teams use on every merge request.</li>
+            <li>Built the observability platform on OpenShift (Prometheus, Grafana, Elasticsearch, Jaeger, OpenTelemetry) and a MongoDB-to-Prometheus exporter adopted by four teams.</li>
+          </ul>
+          <details>
+            <summary>More from Goldman</summary>
+            <ul>
+              <li>Blue-green and canary releases, plus post-deploy regression testing in CI/CD, for single-click, zero-downtime changes.</li>
+              <li>Spring Security, OAuth2 and JWT across the admin and client-facing layers.</li>
+              <li>Backend lead for the Documents module on goldman.com and for Document Vault, a secure document workspace for clients and advisors, owned end to end on AWS.</li>
+              <li>Led the platform's AWS strategy, starting with an ECS/Fargate pilot whose patterns other teams reuse.</li>
+              <li>Mentor engineers on system design and code quality.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">May 2021 – Nov 2021</div>
+        <div>
+          <h3>ML Cloud Tools Developer Intern</h3>
+          <div class="org">Siemens Healthineers · Malvern, PA</div>
+          <ul>
+            <li>Built a Python DICOM image viewer with memory-mapped processing: 10× less memory on large radiology datasets.</li>
+            <li>Built a React UI that sped up medical image rendering for clinical workflows.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Sep 2020 – May 2021</div>
+        <div>
+          <h3>Graduate Research &amp; Teaching Assistant</h3>
+          <div class="org">UNC Charlotte · Charlotte, NC</div>
+          <ul>
+            <li>NLP models that extract causal relationships from S&amp;P 500 financial reports, later published in MDPI Information (2023).</li>
+            <li>Teaching assistant for graduate Database Systems.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Jun 2016 – Oct 2019</div>
+        <div>
+          <h3>Systems Engineer (client: Citigroup)</h3>
+          <div class="org">Tata Consultancy Services · Hyderabad, India</div>
+          <ul>
+            <li>Spring Boot microservices for Citigroup, including a centralized Spring Batch monitor, at 95% unit test coverage.</li>
+            <li>Indexed legacy SQL modules and cut query response times by 40%.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <span class="kicker">Side quests</span>
+      <h2>Things I built because I wanted them to exist</h2>
+      <p class="sub">Some for work, some for fun.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>💳 Real-time fraud detection</h3>
+          <p>A streaming pipeline that flags unusual card spending against each customer's past habits, with exactly-once processing through custom offset management.</p>
+          <div class="tags"><span class="tag">Spark Streaming</span><span class="tag">Kafka</span><span class="tag">Cassandra</span><span class="tag">Airflow</span><span class="tag">Random Forest</span></div>
+        </article>
+        <article class="card">
+          <h3>🎬 Movie recommender</h3>
+          <p>Solved the cold-start problem by using Wikipedia as a metadata source, clustering with K-means and enriching with IMDB ratings. <a href="https://gitlab.com/k.avittan/movie-recommender">Code on GitLab ↗</a></p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">K-means</span><span class="tag">NLP</span></div>
+        </article>
+        <article class="card">
+          <h3>🛒 ShopAnything</h3>
+          <p>A full-stack store with a secure admin portal for inventory and a customer cart and checkout. <a href="https://github.com/sreekarn/ShopAnything">Code on GitHub ↗</a></p>
+          <div class="tags"><span class="tag">Spring MVC</span><span class="tag">Spring Security</span><span class="tag">Hibernate</span><span class="tag">JPA</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <span class="kicker">Toolbox</span>
+      <h2>What I reach for</h2>
+      <p class="sub">Boring, proven tools in production. Shiny new ones on side projects.</p>
+      <div class="skills">
+        <div><h4>Languages</h4><div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div></div>
+        <div><h4>Distributed systems</h4><div class="tags"><span class="tag">Kafka</span><span class="tag">Event-driven architecture</span><span class="tag">Microservices</span><span class="tag">gRPC</span></div></div>
+        <div><h4>Infrastructure</h4><div class="tags"><span class="tag">Kubernetes</span><span class="tag">OpenShift</span><span class="tag">AWS ECS/Fargate</span><span class="tag">Terraform</span><span class="tag">Helm</span><span class="tag">ArgoCD</span><span class="tag">Docker</span></div></div>
+        <div><h4>Observability</h4><div class="tags"><span class="tag">OpenTelemetry</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Jaeger</span><span class="tag">Elasticsearch</span><span class="tag">Alertmanager</span></div></div>
+        <div><h4>Frameworks and data</h4><div class="tags"><span class="tag">Spring Boot</span><span class="tag">Spring Batch</span><span class="tag">React</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div></div>
+        <div><h4>Security and delivery</h4><div class="tags"><span class="tag">OAuth2 / JWT</span><span class="tag">Spring Security</span><span class="tag">Kong</span><span class="tag">Blue-green and canary</span><span class="tag">CI/CD</span><span class="tag">DORA metrics</span></div></div>
+        <div><h4>AI and ML</h4><div class="tags"><span class="tag">Claude Code</span><span class="tag">MCP</span><span class="tag">AI code review</span><span class="tag">BERT</span><span class="tag">scikit-learn</span><span class="tag">HuggingFace</span></div></div>
+        <div><h4>Cost</h4><div class="tags"><span class="tag">FinOps</span><span class="tag">FOCUS billing data</span><span class="tag">Cost attribution</span></div></div>
+      </div>
+    </section>
+
+    <section id="writing">
+      <span class="kicker">Writing and recognition</span>
+      <h2>On paper</h2>
+      <div class="cards" style="margin-top:22px">
+        <article class="card">
+          <h3>📚 Text to Causal Knowledge Graph</h3>
+          <p>An NSF-funded, BERT-based NLP pipeline (F1 89%) that turns financial text into causal knowledge graphs. <i>MDPI Information</i>, Vol. 14(7), June 2023. <a href="https://doi.org/10.3390/info14070367">Read it ↗</a></p>
+        </article>
+        <article class="card">
+          <h3>🔌 ASIC data path logic</h3>
+          <p>"ASIC Implementation of Three Stage Data Path Logic Structure", IJIRSET. <a href="http://www.ijirset.com/upload/2015/september/55_ASIC.pdf">Read it ↗</a></p>
+        </article>
+        <article class="card">
+          <h3>🎓 M.S. Computer Science, 4.0 GPA</h3>
+          <p>UNC Charlotte, 2021. Member of Phi Kappa Phi (top 7.5% of the graduate class). B.Tech in Electronics and Communication Engineering, CVR College of Engineering, 2016.</p>
+        </article>
+        <article class="card">
+          <h3>🏆 Along the way</h3>
+          <p>Service and Commitment Award at Tata Consultancy Services. First prize for a technical paper on NFC at Srujana 2K15, JNT University, Hyderabad.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap contact">
+      <div>
+        <p class="big">Building something reliable, fast, or <span class="grad">cheaper to run?</span> Let's talk.</p>
+        <p class="sub">Drop a note here or email me. I usually reply within a day or two.</p>
+        <div class="btns">
+          <a class="btn" href="mailto:sreekarnedunuri@gmail.com">✉️ sreekarnedunuri@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/sreekarnedunuri/">LinkedIn ↗</a>
+        </div>
+        <p class="quote">"The only way to do great work is to love what you do."</p>
+      </div>
+      <form id="note" class="note" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Your name<input name="name" required autocomplete="name" placeholder="Ada Lovelace"></label>
+        <label>Your email<input name="email" type="email" required autocomplete="email" placeholder="ada@company.com"></label>
+        <label>What's on your mind?<textarea name="message" required rows="5" placeholder="We're hiring for a platform role and your Kafka work caught our eye…"></textarea></label>
+        <!-- Bots fill every field; people never see this one, so a value here marks spam. -->
+        <input type="text" name="_gotcha" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn primary" type="submit">Send it 🚀</button>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </footer>
+
+  <script>
+    // Sends the note in the background so visitors stay on the page. Without JavaScript the form still posts normally.
+    const form = document.getElementById('note')
+    const status = form.querySelector('.status')
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault()
+      if (form.action.includes('YOUR_FORM_ID')) {
+        // Not wired to a form service yet: hand the note to the visitor's email app instead.
+        const subject = encodeURIComponent('Hello from ' + form.name.value)
+        const body = encodeURIComponent(form.message.value + '\n\n' + form.name.value + ' (' + form.email.value + ')')
+        window.location.href = 'mailto:sreekarnedunuri@gmail.com?subject=' + subject + '&body=' + body
+        status.textContent = 'Opening your email app with your note…'
+        return
+      }
+      const button = form.querySelector('button')
+      button.disabled = true
+      status.textContent = 'Sending…'
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        if (!res.ok) throw new Error()
+        form.reset()
+        status.textContent = "Got it, thank you! I'll get back to you soon. ✨"
+      } catch {
+        status.textContent = "That didn't go through. Try again, or email me directly."
+      } finally {
+        button.disabled = false
+      }
+    })
+  </script>
+</body>
+</html>

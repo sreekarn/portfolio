@@ -1,10 +1,3 @@
-title: Sreekar Nedunuri # your name (or website title) here
-logo: "/images/DP.jpg" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  <b>VP · Senior Software Engineer</b><br>
-  Goldman Sachs &nbsp;·&nbsp; Salt Lake City, UT
-  <br>
-  <p><a href="http://www.linkedin.com/in/sreekarn">LinkedIn: linkedin.com/in/sreekarn</a><br>
-  <b>Email:</b> sreekarnedunuri@gmail.com<br>
-  <b>Phone:</b> [removed]</p>
-theme: jekyll-theme-minimal
+title: Sreekar Nedunuri
+description: VP and Senior Software Engineer at Goldman Sachs, founder of CostTrace.
+exclude: [vendor, .bundle, .sass-cache, serve.py, Gemfile, Gemfile.lock]
