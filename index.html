@@ -95,6 +95,11 @@
     @media (max-width: 860px) { .why { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 560px) { .why { grid-template-columns: 1fr; } }
 
+    .unique { margin-top: 22px; display: flex; gap: 16px; align-items: flex-start; padding: 22px 24px; border-radius: 18px; background: linear-gradient(135deg, color-mix(in srgb, var(--violet) 14%, var(--card)), color-mix(in srgb, var(--amber) 10%, var(--card))); border: 1px solid color-mix(in srgb, var(--violet) 30%, var(--line)); }
+    .unique .emoji { font-size: 28px; line-height: 1; }
+    .unique p { margin: 0; color: var(--muted); }
+    .unique p.display { font-size: 22px; font-weight: 800; color: var(--ink); margin-bottom: 6px; }
+
     /* timeline */
     .timeline { position: relative; display: grid; gap: 18px; margin-top: 8px; }
     .timeline::before { content: ""; position: absolute; left: 27px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(var(--violet), var(--fuchsia), var(--amber)); opacity: .5; }
@@ -245,7 +250,13 @@
           <p class="receipt">🧾 An MCP server for coding agents, plus AI code review in CI/CD</p>
         </article>
       </div>
-      <p class="sub" style="margin-top:22px">Still not convinced? <a href="#contact">Let's talk ✍️</a> I'll bring more receipts.</p>
+      <div class="unique">
+        <span class="emoji">✨</span>
+        <div>
+          <p class="display">What makes me different is the mix.</p>
+          <p>I've built high-volume platforms where mistakes cost real money, I care what every change costs to run, and I build with AI every day. Most roles need one of those. I bring all three, plus the habit of backing every claim with a number.</p>
+        </div>
+      </div>
     </section>
 
     <section id="work">
